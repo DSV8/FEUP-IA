@@ -1,0 +1,856 @@
+2024-05-25 16:19:34,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 16:19:34,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 16:19:34,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 16:19:34,971:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:05:44,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:05:44,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:05:44,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:05:44,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:05:54,089:INFO:PyCaret ClassificationExperiment
+2024-05-25 18:05:54,089:INFO:Logging name: clf-default-name
+2024-05-25 18:05:54,089:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-05-25 18:05:54,089:INFO:version 3.3.2
+2024-05-25 18:05:54,089:INFO:Initializing setup()
+2024-05-25 18:05:54,089:INFO:self.USI: 4631
+2024-05-25 18:05:54,089:INFO:self._variable_keys: {'n_jobs_param', 'memory', 'X', 'y_train', 'y', 'idx', 'X_train', 'USI', 'target_param', 'log_plots_param', 'gpu_param', 'seed', 'fold_groups_param', 'gpu_n_jobs_param', 'data', 'fold_shuffle_param', 'logging_param', 'exp_id', '_available_plots', 'exp_name_log', 'fold_generator', 'X_test', 'y_test', 'html_param', 'fix_imbalance', 'is_multiclass', '_ml_usecase', 'pipeline'}
+2024-05-25 18:05:54,089:INFO:Checking environment
+2024-05-25 18:05:54,089:INFO:python_version: 3.11.7
+2024-05-25 18:05:54,089:INFO:python_build: ('main', 'Dec  4 2023 18:10:11')
+2024-05-25 18:05:54,089:INFO:machine: arm64
+2024-05-25 18:05:54,089:INFO:platform: macOS-14.4.1-arm64-arm-64bit
+2024-05-25 18:05:54,089:INFO:Memory: svmem(total=17179869184, available=4311990272, percent=74.9, used=6366347264, free=50544640, active=4280041472, inactive=4256088064, wired=2086305792)
+2024-05-25 18:05:54,089:INFO:Physical Core: 8
+2024-05-25 18:05:54,089:INFO:Logical Core: 8
+2024-05-25 18:05:54,089:INFO:Checking libraries
+2024-05-25 18:05:54,089:INFO:System:
+2024-05-25 18:05:54,089:INFO:    python: 3.11.7 (main, Dec  4 2023, 18:10:11) [Clang 15.0.0 (clang-1500.1.0.2.5)]
+2024-05-25 18:05:54,089:INFO:executable: /opt/homebrew/opt/python@3.11/bin/python3.11
+2024-05-25 18:05:54,089:INFO:   machine: macOS-14.4.1-arm64-arm-64bit
+2024-05-25 18:05:54,089:INFO:PyCaret required dependencies:
+2024-05-25 18:05:54,999:INFO:                 pip: 24.0
+2024-05-25 18:05:54,999:INFO:          setuptools: 69.0.2
+2024-05-25 18:05:54,999:INFO:             pycaret: 3.3.2
+2024-05-25 18:05:54,999:INFO:             IPython: 8.21.0
+2024-05-25 18:05:54,999:INFO:          ipywidgets: 8.1.2
+2024-05-25 18:05:54,999:INFO:                tqdm: 4.66.4
+2024-05-25 18:05:54,999:INFO:               numpy: 1.26.4
+2024-05-25 18:05:54,999:INFO:              pandas: 2.1.4
+2024-05-25 18:05:54,999:INFO:              jinja2: 3.1.3
+2024-05-25 18:05:55,000:INFO:               scipy: 1.11.4
+2024-05-25 18:05:55,000:INFO:              joblib: 1.3.2
+2024-05-25 18:05:55,000:INFO:             sklearn: 1.4.2
+2024-05-25 18:05:55,000:INFO:                pyod: 1.1.3
+2024-05-25 18:05:55,000:INFO:            imblearn: 0.12.2
+2024-05-25 18:05:55,000:INFO:   category_encoders: 2.6.3
+2024-05-25 18:05:55,000:INFO:            lightgbm: 4.3.0
+2024-05-25 18:05:55,000:INFO:               numba: 0.59.1
+2024-05-25 18:05:55,000:INFO:            requests: 2.31.0
+2024-05-25 18:05:55,000:INFO:          matplotlib: 3.7.5
+2024-05-25 18:05:55,000:INFO:          scikitplot: 0.3.7
+2024-05-25 18:05:55,000:INFO:         yellowbrick: 1.5
+2024-05-25 18:05:55,000:INFO:              plotly: 5.22.0
+2024-05-25 18:05:55,000:INFO:    plotly-resampler: Not installed
+2024-05-25 18:05:55,000:INFO:             kaleido: 0.2.1
+2024-05-25 18:05:55,000:INFO:           schemdraw: 0.15
+2024-05-25 18:05:55,000:INFO:         statsmodels: 0.14.2
+2024-05-25 18:05:55,000:INFO:              sktime: 0.26.0
+2024-05-25 18:05:55,000:INFO:               tbats: 1.1.3
+2024-05-25 18:05:55,000:INFO:            pmdarima: 2.0.4
+2024-05-25 18:05:55,000:INFO:              psutil: 5.9.8
+2024-05-25 18:05:55,000:INFO:          markupsafe: 2.1.5
+2024-05-25 18:05:55,000:INFO:             pickle5: Not installed
+2024-05-25 18:05:55,000:INFO:         cloudpickle: 3.0.0
+2024-05-25 18:05:55,000:INFO:         deprecation: 2.1.0
+2024-05-25 18:05:55,000:INFO:              xxhash: 3.4.1
+2024-05-25 18:05:55,000:INFO:           wurlitzer: 3.1.0
+2024-05-25 18:05:55,000:INFO:PyCaret optional dependencies:
+2024-05-25 18:05:55,006:INFO:                shap: Not installed
+2024-05-25 18:05:55,006:INFO:           interpret: Not installed
+2024-05-25 18:05:55,006:INFO:                umap: Not installed
+2024-05-25 18:05:55,006:INFO:     ydata_profiling: Not installed
+2024-05-25 18:05:55,006:INFO:  explainerdashboard: Not installed
+2024-05-25 18:05:55,006:INFO:             autoviz: Not installed
+2024-05-25 18:05:55,006:INFO:           fairlearn: Not installed
+2024-05-25 18:05:55,006:INFO:          deepchecks: Not installed
+2024-05-25 18:05:55,006:INFO:             xgboost: 2.0.3
+2024-05-25 18:05:55,006:INFO:            catboost: 1.2.5
+2024-05-25 18:05:55,006:INFO:              kmodes: Not installed
+2024-05-25 18:05:55,006:INFO:             mlxtend: Not installed
+2024-05-25 18:05:55,006:INFO:       statsforecast: Not installed
+2024-05-25 18:05:55,006:INFO:        tune_sklearn: Not installed
+2024-05-25 18:05:55,006:INFO:                 ray: Not installed
+2024-05-25 18:05:55,006:INFO:            hyperopt: Not installed
+2024-05-25 18:05:55,006:INFO:              optuna: Not installed
+2024-05-25 18:05:55,006:INFO:               skopt: Not installed
+2024-05-25 18:05:55,006:INFO:              mlflow: Not installed
+2024-05-25 18:05:55,006:INFO:              gradio: Not installed
+2024-05-25 18:05:55,006:INFO:             fastapi: Not installed
+2024-05-25 18:05:55,006:INFO:             uvicorn: Not installed
+2024-05-25 18:05:55,006:INFO:              m2cgen: Not installed
+2024-05-25 18:05:55,006:INFO:           evidently: Not installed
+2024-05-25 18:05:55,006:INFO:               fugue: Not installed
+2024-05-25 18:05:55,006:INFO:           streamlit: Not installed
+2024-05-25 18:05:55,006:INFO:             prophet: Not installed
+2024-05-25 18:05:55,006:INFO:None
+2024-05-25 18:05:55,006:INFO:Set up data.
+2024-05-25 18:05:55,010:INFO:Set up folding strategy.
+2024-05-25 18:05:55,010:INFO:Set up train/test split.
+2024-05-25 18:05:55,014:INFO:Set up index.
+2024-05-25 18:05:55,014:INFO:Assigning column types.
+2024-05-25 18:05:55,017:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-25 18:05:55,034:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-25 18:05:55,034:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-25 18:05:55,048:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:05:55,049:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:05:56,071:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-25 18:05:56,072:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-25 18:05:56,084:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:05:56,085:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:05:56,085:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-25 18:05:56,104:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-25 18:05:56,115:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:05:56,116:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:05:56,135:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-25 18:05:56,148:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:05:56,149:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:05:56,149:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-05-25 18:05:56,180:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:05:56,182:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:05:56,212:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:05:56,213:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:05:56,215:INFO:Preparing preprocessing pipeline...
+2024-05-25 18:05:56,216:INFO:Set up simple imputation.
+2024-05-25 18:05:56,216:INFO:Set up column transformation.
+2024-05-25 18:05:56,216:INFO:Set up feature normalization.
+2024-05-25 18:05:56,217:INFO:Set up column name cleaning.
+2024-05-25 18:05:56,244:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/preprocessing/_data.py:3408: RuntimeWarning: overflow encountered in power
+  out[pos] = (np.power(x[pos] + 1, lmbda) - 1) / lmbda
+
+2024-05-25 18:08:45,606:INFO:PyCaret ClassificationExperiment
+2024-05-25 18:08:45,607:INFO:Logging name: clf-default-name
+2024-05-25 18:08:45,607:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-05-25 18:08:45,607:INFO:version 3.3.2
+2024-05-25 18:08:45,607:INFO:Initializing setup()
+2024-05-25 18:08:45,607:INFO:self.USI: ea43
+2024-05-25 18:08:45,607:INFO:self._variable_keys: {'n_jobs_param', 'memory', 'X', 'y_train', 'y', 'idx', 'X_train', 'USI', 'target_param', 'log_plots_param', 'gpu_param', 'seed', 'fold_groups_param', 'gpu_n_jobs_param', 'data', 'fold_shuffle_param', 'logging_param', 'exp_id', '_available_plots', 'exp_name_log', 'fold_generator', 'X_test', 'y_test', 'html_param', 'fix_imbalance', 'is_multiclass', '_ml_usecase', 'pipeline'}
+2024-05-25 18:08:45,607:INFO:Checking environment
+2024-05-25 18:08:45,607:INFO:python_version: 3.11.7
+2024-05-25 18:08:45,607:INFO:python_build: ('main', 'Dec  4 2023 18:10:11')
+2024-05-25 18:08:45,607:INFO:machine: arm64
+2024-05-25 18:08:45,607:INFO:platform: macOS-14.4.1-arm64-arm-64bit
+2024-05-25 18:08:45,607:INFO:Memory: svmem(total=17179869184, available=4263231488, percent=75.2, used=6142885888, free=140034048, active=4096737280, inactive=4099915776, wired=2046148608)
+2024-05-25 18:08:45,608:INFO:Physical Core: 8
+2024-05-25 18:08:45,608:INFO:Logical Core: 8
+2024-05-25 18:08:45,608:INFO:Checking libraries
+2024-05-25 18:08:45,608:INFO:System:
+2024-05-25 18:08:45,608:INFO:    python: 3.11.7 (main, Dec  4 2023, 18:10:11) [Clang 15.0.0 (clang-1500.1.0.2.5)]
+2024-05-25 18:08:45,608:INFO:executable: /opt/homebrew/opt/python@3.11/bin/python3.11
+2024-05-25 18:08:45,608:INFO:   machine: macOS-14.4.1-arm64-arm-64bit
+2024-05-25 18:08:45,608:INFO:PyCaret required dependencies:
+2024-05-25 18:08:45,608:INFO:                 pip: 24.0
+2024-05-25 18:08:45,608:INFO:          setuptools: 69.0.2
+2024-05-25 18:08:45,608:INFO:             pycaret: 3.3.2
+2024-05-25 18:08:45,608:INFO:             IPython: 8.21.0
+2024-05-25 18:08:45,608:INFO:          ipywidgets: 8.1.2
+2024-05-25 18:08:45,608:INFO:                tqdm: 4.66.4
+2024-05-25 18:08:45,608:INFO:               numpy: 1.26.4
+2024-05-25 18:08:45,608:INFO:              pandas: 2.1.4
+2024-05-25 18:08:45,608:INFO:              jinja2: 3.1.3
+2024-05-25 18:08:45,608:INFO:               scipy: 1.11.4
+2024-05-25 18:08:45,608:INFO:              joblib: 1.3.2
+2024-05-25 18:08:45,608:INFO:             sklearn: 1.4.2
+2024-05-25 18:08:45,608:INFO:                pyod: 1.1.3
+2024-05-25 18:08:45,608:INFO:            imblearn: 0.12.2
+2024-05-25 18:08:45,608:INFO:   category_encoders: 2.6.3
+2024-05-25 18:08:45,608:INFO:            lightgbm: 4.3.0
+2024-05-25 18:08:45,608:INFO:               numba: 0.59.1
+2024-05-25 18:08:45,608:INFO:            requests: 2.31.0
+2024-05-25 18:08:45,608:INFO:          matplotlib: 3.7.5
+2024-05-25 18:08:45,608:INFO:          scikitplot: 0.3.7
+2024-05-25 18:08:45,608:INFO:         yellowbrick: 1.5
+2024-05-25 18:08:45,608:INFO:              plotly: 5.22.0
+2024-05-25 18:08:45,608:INFO:    plotly-resampler: Not installed
+2024-05-25 18:08:45,608:INFO:             kaleido: 0.2.1
+2024-05-25 18:08:45,608:INFO:           schemdraw: 0.15
+2024-05-25 18:08:45,609:INFO:         statsmodels: 0.14.2
+2024-05-25 18:08:45,609:INFO:              sktime: 0.26.0
+2024-05-25 18:08:45,609:INFO:               tbats: 1.1.3
+2024-05-25 18:08:45,609:INFO:            pmdarima: 2.0.4
+2024-05-25 18:08:45,609:INFO:              psutil: 5.9.8
+2024-05-25 18:08:45,609:INFO:          markupsafe: 2.1.5
+2024-05-25 18:08:45,609:INFO:             pickle5: Not installed
+2024-05-25 18:08:45,609:INFO:         cloudpickle: 3.0.0
+2024-05-25 18:08:45,609:INFO:         deprecation: 2.1.0
+2024-05-25 18:08:45,609:INFO:              xxhash: 3.4.1
+2024-05-25 18:08:45,609:INFO:           wurlitzer: 3.1.0
+2024-05-25 18:08:45,609:INFO:PyCaret optional dependencies:
+2024-05-25 18:08:45,609:INFO:                shap: Not installed
+2024-05-25 18:08:45,609:INFO:           interpret: Not installed
+2024-05-25 18:08:45,609:INFO:                umap: Not installed
+2024-05-25 18:08:45,609:INFO:     ydata_profiling: Not installed
+2024-05-25 18:08:45,609:INFO:  explainerdashboard: Not installed
+2024-05-25 18:08:45,609:INFO:             autoviz: Not installed
+2024-05-25 18:08:45,609:INFO:           fairlearn: Not installed
+2024-05-25 18:08:45,609:INFO:          deepchecks: Not installed
+2024-05-25 18:08:45,609:INFO:             xgboost: 2.0.3
+2024-05-25 18:08:45,609:INFO:            catboost: 1.2.5
+2024-05-25 18:08:45,609:INFO:              kmodes: Not installed
+2024-05-25 18:08:45,609:INFO:             mlxtend: Not installed
+2024-05-25 18:08:45,609:INFO:       statsforecast: Not installed
+2024-05-25 18:08:45,609:INFO:        tune_sklearn: Not installed
+2024-05-25 18:08:45,609:INFO:                 ray: Not installed
+2024-05-25 18:08:45,609:INFO:            hyperopt: Not installed
+2024-05-25 18:08:45,609:INFO:              optuna: Not installed
+2024-05-25 18:08:45,609:INFO:               skopt: Not installed
+2024-05-25 18:08:45,609:INFO:              mlflow: Not installed
+2024-05-25 18:08:45,609:INFO:              gradio: Not installed
+2024-05-25 18:08:45,609:INFO:             fastapi: Not installed
+2024-05-25 18:08:45,609:INFO:             uvicorn: Not installed
+2024-05-25 18:08:45,609:INFO:              m2cgen: Not installed
+2024-05-25 18:08:45,609:INFO:           evidently: Not installed
+2024-05-25 18:08:45,609:INFO:               fugue: Not installed
+2024-05-25 18:08:45,609:INFO:           streamlit: Not installed
+2024-05-25 18:08:45,609:INFO:             prophet: Not installed
+2024-05-25 18:08:45,609:INFO:None
+2024-05-25 18:08:45,610:INFO:Set up data.
+2024-05-25 18:08:45,616:INFO:Set up folding strategy.
+2024-05-25 18:08:45,616:INFO:Set up train/test split.
+2024-05-25 18:08:45,622:INFO:Set up index.
+2024-05-25 18:08:45,622:INFO:Assigning column types.
+2024-05-25 18:08:45,630:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-25 18:08:45,654:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-25 18:08:45,655:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-25 18:08:45,668:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:08:45,669:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:08:45,688:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-25 18:08:45,689:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-25 18:08:45,700:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:08:45,701:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:08:45,701:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-25 18:08:45,719:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-25 18:08:45,730:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:08:45,731:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:08:45,749:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-25 18:08:45,760:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:08:45,761:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:08:45,761:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-05-25 18:08:45,789:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:08:45,790:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:08:45,818:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-05-25 18:08:45,819:INFO:Soft dependency imported: catboost: 1.2.5
+2024-05-25 18:08:45,820:INFO:Preparing preprocessing pipeline...
+2024-05-25 18:08:45,821:INFO:Set up simple imputation.
+2024-05-25 18:08:45,821:INFO:Set up column transformation.
+2024-05-25 18:08:45,821:INFO:Set up feature normalization.
+2024-05-25 18:08:45,821:INFO:Set up column name cleaning.
+2024-05-25 18:08:45,845:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/preprocessing/_data.py:3408: RuntimeWarning: overflow encountered in power
+  out[pos] = (np.power(x[pos] + 1, lmbda) - 1) / lmbda
+
+2024-05-25 18:46:04,154:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:46:04,155:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:46:04,155:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:46:04,155:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 18:51:10,761:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+2024-05-25 18:52:41,996:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+2024-05-25 18:52:44,650:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+2024-05-25 18:52:48,892:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+2024-05-25 18:52:53,503:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+2024-05-25 18:52:59,464:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+2024-05-25 18:53:04,346:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+
+2024-05-25 19:00:13,939:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:13,946:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:13,963:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:13,984:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:13,992:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:13,999:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,006:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,025:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,032:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,038:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,057:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,071:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,083:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,097:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,110:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,124:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,136:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,148:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,159:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:00:14,171:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:04:13,254:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/neural_network/_multilayer_perceptron.py:698: UserWarning: Training interrupted by user.
+  warnings.warn("Training interrupted by user.")
+
+2024-05-25 19:04:29,511:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 19:04:29,512:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 19:04:29,512:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 19:04:29,512:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-25 19:04:55,746:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:04:55,793:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:04:55,989:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:04:56,036:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:06:19,584:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,680:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,687:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,691:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,706:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,717:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,728:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,733:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,745:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,758:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,768:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,777:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,783:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,794:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,802:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,814:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,819:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,826:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,837:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:06:19,843:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:17:01,690:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:17:01,746:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:17:01,949:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:17:02,003:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:18:31,581:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,591:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,599:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,617:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,631:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,648:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,670:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,683:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,694:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,710:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,718:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,732:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,738:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,752:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,759:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,769:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,776:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,782:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,793:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:18:31,807:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:20:13,175:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:20:13,270:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:20:13,824:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:20:13,923:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:469: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2024-05-25 19:21:45,926:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:45,975:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:45,987:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:45,995:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,005:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,011:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,026:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,032:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,040:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,051:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,059:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,067:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,074:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,088:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,104:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,110:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,122:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,128:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,141:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-25 19:21:46,152:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:15:17,809:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:15:17,810:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:15:17,810:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:15:17,810:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:17:06,993:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,132:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,139:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,143:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,155:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,165:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,171:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,186:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,191:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,206:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,212:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,225:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,231:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,237:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,247:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,252:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,259:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,269:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,274:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:17:07,284:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:24:54,809:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:24:54,809:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:24:54,809:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:24:54,810:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:26:44,199:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,208:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,216:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,224:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,232:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,243:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,252:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,270:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,282:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,292:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,300:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,319:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,330:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,348:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,361:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,384:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,401:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,418:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,441:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:26:44,452:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,418:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,579:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,591:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,598:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,609:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,615:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,621:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,634:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,644:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,649:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,674:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,685:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,692:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,704:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,709:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,716:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,726:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,732:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,738:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:44:03,748:WARNING:/opt/homebrew/lib/python3.11/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2024-05-26 16:57:39,514:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:57:39,514:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:57:39,514:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 16:57:39,514:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 17:12:30,705:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 17:12:30,706:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 17:12:30,706:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-26 17:12:30,706:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
